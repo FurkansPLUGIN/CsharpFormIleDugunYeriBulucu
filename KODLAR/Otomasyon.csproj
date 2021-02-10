@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{40B98404-B519-49C7-A1A2-3DA4774FF054}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Otomasyon</RootNamespace>
+    <AssemblyName>Otomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anasayfa_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anasayfa_frm.Designer.cs">
+      <DependentUpon>anasayfa_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ayarlar_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ayarlar_frm.Designer.cs">
+      <DependentUpon>ayarlar_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baglantı_sql.cs" />
+    <Compile Include="bankalar_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bankalar_frm.Designer.cs">
+      <DependentUpon>bankalar_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="faturalar_tbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="faturalar_tbl.Designer.cs">
+      <DependentUpon>faturalar_tbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KAYIT_SAYFASI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KAYIT_SAYFASI.Designer.cs">
+      <DependentUpon>KAYIT_SAYFASI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanici_icin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanici_icin.Designer.cs">
+      <DependentUpon>kullanici_icin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musterıları_gor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musterıları_gor.Designer.cs">
+      <DependentUpon>musterıları_gor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musterıler_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musterıler_frm.Designer.cs">
+      <DependentUpon>musterıler_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musterı_profılı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musterı_profılı.Designer.cs">
+      <DependentUpon>musterı_profılı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onerileri_gor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="onerileri_gor.Designer.cs">
+      <DependentUpon>onerileri_gor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onerı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="onerı.Designer.cs">
+      <DependentUpon>onerı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personeller_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personeller_frm.Designer.cs">
+      <DependentUpon>personeller_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SALONLARIN_İÇİ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SALONLARIN_İÇİ.Designer.cs">
+      <DependentUpon>SALONLARIN_İÇİ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salon_ekle_cıkar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salon_ekle_cıkar.Designer.cs">
+      <DependentUpon>salon_ekle_cıkar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SALON_SAHIBI_KAYIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SALON_SAHIBI_KAYIT.Designer.cs">
+      <DependentUpon>SALON_SAHIBI_KAYIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SIKAYET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SIKAYET.Designer.cs">
+      <DependentUpon>SIKAYET.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SIKAYET_ET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SIKAYET_ET.Designer.cs">
+      <DependentUpon>SIKAYET_ET.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uygulamalarım.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uygulamalarım.Designer.cs">
+      <DependentUpon>uygulamalarım.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YAPIMCI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YAPIMCI.Designer.cs">
+      <DependentUpon>YAPIMCI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="anasayfa_frm.resx">
+      <DependentUpon>anasayfa_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ayarlar_frm.resx">
+      <DependentUpon>ayarlar_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bankalar_frm.resx">
+      <DependentUpon>bankalar_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="faturalar_tbl.resx">
+      <DependentUpon>faturalar_tbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KAYIT_SAYFASI.resx">
+      <DependentUpon>KAYIT_SAYFASI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanici_icin.resx">
+      <DependentUpon>kullanici_icin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musterıları_gor.resx">
+      <DependentUpon>musterıları_gor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musterıler_frm.resx">
+      <DependentUpon>musterıler_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musterı_profılı.resx">
+      <DependentUpon>musterı_profılı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="onerileri_gor.resx">
+      <DependentUpon>onerileri_gor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="onerı.resx">
+      <DependentUpon>onerı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personeller_frm.resx">
+      <DependentUpon>personeller_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SALONLARIN_İÇİ.resx">
+      <DependentUpon>SALONLARIN_İÇİ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salon_ekle_cıkar.resx">
+      <DependentUpon>salon_ekle_cıkar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SALON_SAHIBI_KAYIT.resx">
+      <DependentUpon>SALON_SAHIBI_KAYIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SIKAYET.resx">
+      <DependentUpon>SIKAYET.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SIKAYET_ET.resx">
+      <DependentUpon>SIKAYET_ET.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uygulamalarım.resx">
+      <DependentUpon>uygulamalarım.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YAPIMCI.resx">
+      <DependentUpon>YAPIMCI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
